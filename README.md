@@ -1,10 +1,10 @@
-### MEAN
+# MEAN
 
 A framework for developing mean-stack apps
 
 ## INSTALLATION
 
-# LINUX
+### LINUX
 
 To setup
 
@@ -23,7 +23,7 @@ cd project-name
 mean init [-y]
 ```
 
-# USAGE
+### USAGE
 
 To add mongoose models to your backend, use `mean gen model --options`
 as `--options` being model names seperated by space.
