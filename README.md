@@ -1,4 +1,4 @@
-# MEAN
+# MEN
 
 A framework that creates an integrible backend tree structure. It uses backend only
 features of the master branch, have managed your backend environment with a couple of single
