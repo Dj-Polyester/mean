@@ -48,21 +48,16 @@ void createFiles()
     free(urlDir);
     free(appDir);
 }
-
-void initFrontLinux()
-{
-    system("ng new frontend");
-}
-void initBackLinux()
+void initLinux()
 {
     createFiles();
     system("cd ./backend && npm init && npm i express mongoose && npm i nodemon --save-dev");
-    replaceFileLine("./backend/package.json",13,NPMLITERAL);
+    replaceFileLine("./backend/package.json",14,NPMLITERAL);
 }
-void initBackLinuxY()
+void initLinuxY()
 {
     createFiles();
     system("cd ./backend && npm init -y && npm i express mongoose && npm i nodemon --save-dev");
     // printf("DONE------------------------------------------------------------------");
-    replaceFileLine("./backend/package.json",13,NPMLITERAL);
+    replaceFileLine("./backend/package.json",14,NPMLITERAL);
 }

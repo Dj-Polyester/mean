@@ -6,10 +6,9 @@
 #include "includes.h"
 #include "defines.h"
 
-void initFrontLinux();
-void initBackLinux();
-void initBackLinuxY();
-void initBackApple();
-void initBackWin();
+void initLinux();
+void initLinuxY();
+void initApple();
+void initWin();
 
 #endif

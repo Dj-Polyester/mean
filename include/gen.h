@@ -12,6 +12,5 @@ void createRouter(const char*, const char*, const char*);
 void createMR(const char*);
 void genModelLinux();
 char* capitalizeInitial(const char*);
-void genCompLinux();
 
 #endif

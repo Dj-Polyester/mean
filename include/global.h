@@ -2,31 +2,22 @@
 #define GLOBAL_H
 
 #if __APPLE__
-	#define INITBACK initBackApple
-	#define INITBACKY initBackAppleY
-	#define INITFRONT initFrontApple
+	#define INIT initApple
+	#define INITY initAppleY
 	#define GENMODEL genModelApple
-	#define GENCOMP genCompApple
-	#define SERVEBACK serveBackApple
-	#define SERVEFRONT serveFrontApple
+	#define SERVE serveApple
 
 #elif _WIN32
-    #define INITBACK initBackWin
-	#define INITBACKY initBackWinY
-    #define INITFRONT initFrontWin
+    #define INIT initWin
+	#define INITY initWinY
 	#define GENMODEL genModelWin
-	#define GENCOMP genCompWin
-	#define SERVEBACK serveBackWin
-	#define SERVEFRONT serveFrontWin
+	#define SERVE serveWin
 
 #elif __linux__
-    #define INITBACK initBackLinux
-	#define INITBACKY initBackLinuxY
-    #define INITFRONT initFrontLinux
+    #define INIT initLinux
+	#define INITY initLinuxY
 	#define GENMODEL genModelLinux
-	#define GENCOMP genCompLinux
-	#define SERVEBACK serveBackLinux
-	#define SERVEFRONT serveFrontLinux
+	#define SERVE serveLinux
 #endif
 
 #include "includes.h"

@@ -69,17 +69,3 @@ void genModelLinux(int argc,const char* argv[])
         free(name);
     }
 }
-
-void genCompLinux(int argc,const char* argv[])
-{
-    char* command;
-    
-    for (int i = 3; i < argc; i++)
-    {
-        command = calloc(100,sizeof(char));
-        sprintf(command,"cd frontend && ng generate component %s",argv[i]);
-        printf("%s",command);
-        system(command);
-        free(command);
-    }
-}

@@ -71,6 +71,6 @@ router.delete(\"\", (req, res) => {\n\
 module.exports = router;"
 #define ADDROUTERLITERAL "\nconst %sRouter = require(\"./db/routers/%s\")\n\
 app.use(%sRouter)\n"
-#define NPMLITERAL "\t\"test\": \"nodemon src/index.js --ext js,hbs,css,mjs,json\"\n"
+#define NPMLITERAL "\t\t\"test\": \"nodemon src/index.js --ext js,hbs,css,mjs,json\"\n"
 #define GITIGNORELITERAL "url.js"
 #endif

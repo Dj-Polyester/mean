@@ -8,29 +8,18 @@ int main(int argc, char const *argv[])
         {
             if (argc == 3 && ISEQUAL(argv[2],"-y"))
             {
-                INITBACKY();
-                INITFRONT();
+                INITY();
             }
             else if (argc == 2)
             {
-                INITBACK();
-                INITFRONT();
+                INIT();
             }
             else error("Invalid number/set of items entered.");
         }
         //mean serve [b/f]
         else if (ISEQUAL(argv[1],"serve"))
         {
-            if (argc > 2 && ISEQUAL(argv[2],"b"))
-            {
-                SERVEBACK(argc,argv);
-            }
-            else if (argc > 2 && ISEQUAL(argv[2],"f"))
-            {
-                SERVEFRONT();
-            }
-            else
-                error("Invalid number/set of items entered.");
+            SERVE(argc,argv);
         }
         //mean gen [model/comp] --options
         else if (ISEQUAL(argv[1],"gen"))
@@ -38,10 +27,6 @@ int main(int argc, char const *argv[])
             if (argc > 3 && ISEQUAL(argv[2],"model"))
             {
                 GENMODEL(argc,argv);
-            }
-            else if (argc > 3 && ISEQUAL(argv[2],"comp"))
-            {
-                GENCOMP();
             }
             else
                 error("Invalid number/set of items entered.");

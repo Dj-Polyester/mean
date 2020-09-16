@@ -1,10 +1,6 @@
 #include "../include/serve.h"
 
-void serveBackLinux()
+void serveLinux()
 {
     system("cd backend && npm test");
-}
-void serveFrontLinux()
-{
-    system("ng serve --open");
 }

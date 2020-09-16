@@ -3,11 +3,8 @@
 
 #include "global.h"
 
-void serveBackWin();
-void serveFrontWin();
-void serveBackApple();
-void serveFrontApple();
-void serveBackLinux();
-void serveFrontLinux();
+void serveWin();
+void serveApple();
+void serveLinux();
 
 #endif
