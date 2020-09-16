@@ -11,7 +11,7 @@ line commands, then move the folder wherever you wish.
 First clone the branch
 
 ```
-git clone --single-branch --branch men git@github.com:Dj-Polyester/mean.git
+git clone --single-branch --branch men git@github.com:Dj-Polyester/mean.git men
 ```
 
 To setup
